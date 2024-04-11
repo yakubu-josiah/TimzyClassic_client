@@ -1,15 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Layout from "./components/Layout";
+import Product from "./pages/Product/Product";
+import Products from "./pages/Products/Products";
+import NotFound from "./pages/NotFound";
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Routes>
-          <Route>
-            
-          </Route>
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+
+              <Route index element={<Home />} />
+              <Route path="/product/:id" element={<Product />} />
+              <Route path="/products" element={<Products />} />
+
+              
+              <Route path="*" element={<NotFound />}></Route>
+
+            </Route>
+          </Routes>
       </Router>
     </div>
   );
