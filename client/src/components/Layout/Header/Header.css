@@ -1,0 +1,51 @@
+.header {
+    background-color: #ddfcb5;
+    padding: 20px 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.header .header-wrapper .header-items {
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;    
+    align-items: center;
+    width: 100%;
+}
+
+
+/* THE HEADER LOGO SECTION */
+.header .header-wrapper .header-items .logo {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+
+
+/* THE HEADER MENU SECTION */
+.header .header-wrapper .header-items .menu ul {
+    display: flex; /* Display will be block in Tablet Mode */
+    align-items: center;
+    flex: 1 1 auto;
+}
+.header .header-wrapper .header-items .menu ul li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 7px 15px;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+
+/* THE HEADER NAVBAR ICONS SECTION */
+.header .header-wrapper .header-items .navIcons {
+    display: flex;
+}
+.header .header-wrapper .header-items .navIcons div {
+    padding: 0 5px;
+}

@@ -1,0 +1,12 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ddfcb5;
+    padding: 30px 50px;
+    height: fit-content;
+}
+
+.footer div {
+    width: 100%;
+}
