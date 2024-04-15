@@ -1,12 +1,111 @@
-.footer {
-    position: absolute;
-    bottom: 0;
+footer {
     width: 100%;
     background-color: #ddfcb5;
     padding: 30px 50px;
-    height: fit-content;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer .wrapper {
+    max-width: 450px;
+    margin: 0 auto;
 }
 
-.footer div {
+footer .wrapper .top, footer .wrapper .bottom {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+    margin-bottom: 40px;
+}
+footer .wrapper .top div h2 {
+    padding: 4px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+footer .wrapper .top div p {
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+footer .wrapper .top div .form {
+    display: block;
     width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px 30px;
+}
+/* footer .wrapper .top div .form form {
+
+} */
+footer .wrapper .top div form input {
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 8px;
+    padding-right: 45px;
+    font-size: 1rem;
+    border: 0;
+    overflow: hidden;
+    background: transparent;
+    border-bottom: 2px white solid;
+}
+footer .wrapper .top div form input::placeholder {
+    font-size: 1rem;
+    color: inherit;
+}
+footer .wrapper .top div form input:focus, footer .wrapper .bottom div form select, footer .wrapper .bottom div form select:active{
+    border-color: white;
+    outline: none;
+
+}
+footer .wrapper .top div form .mail{
+    position: absolute;
+    right: 30px;
+    color: inherit;
+}
+
+footer .wrapper .bottom .wrap form {
+    margin: auto;
+}
+footer .wrapper .bottom .wrap form select{
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 8px 20px 8px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    overflow: hidden;
+    background: transparent;
+    border-bottom: 2px white solid;
+    appearance: none; /* Remove default arrow icon in some browsers */
+    -webkit-appearance: none; /* For WebKit-based browsers */
+    -moz-appearance: none; /* For Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>'); /* Custom dropdown icon */
+    background-repeat: no-repeat;
+    background-position: right 5px;
+    background-size: 20px;
+}
+footer .wrapper .bottom .wrap form select option {
+    position: relative;
+    width: 200px;
+    background: #ddfcb5;
+    padding: 4px 30px;
+}
+footer .wrapper .bottom .wrap div .socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+footer .wrapper .bottom .wrap div .socials .icons {
+    padding: 10px;
+    border-radius: 100%;
+    border: black 1px solid;
+    margin-bottom: 30px;
+}
+footer .wrapper .bottom .wrap .site_links div{
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+footer .wrapper .bottom .wrap .site_links a {
+    display: inline-block;
+    padding: 5px 10px;
 }
