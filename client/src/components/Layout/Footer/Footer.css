@@ -47,7 +47,7 @@ footer .wrapper .top div form input {
 }
 footer .wrapper .top div form input::placeholder {
     font-size: 1rem;
-    color: inherit;
+    color: #808080;
 }
 footer .wrapper .top div form input:focus, footer .wrapper .bottom div form select, footer .wrapper .bottom div form select:active{
     border-color: white;
@@ -57,7 +57,7 @@ footer .wrapper .top div form input:focus, footer .wrapper .bottom div form sele
 footer .wrapper .top div form .mail{
     position: absolute;
     right: 30px;
-    color: inherit;
+    color: #808080;
 }
 
 footer .wrapper .bottom .wrap form {

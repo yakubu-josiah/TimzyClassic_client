@@ -1,7 +1,7 @@
 .header {
     background-color: #ddfcb5;
-    padding: 20px 0;
-    max-width: 100%;
+    padding: 23px 0;
+    width: 100%;
     margin: 0 auto;
 }
 .header .header-wrapper{
@@ -26,26 +26,57 @@
 
 
 /* THE HEADER MENU SECTION */
+.header .header-wrapper .header-items .menu {
+    display: flex;
+    text-align: center;
+}
 .header .header-wrapper .header-items .menu ul {
-    display: flex; /* Display will be block in Tablet Mode */
-    align-items: center;
-    flex: 1 1 auto;
+    /* Display will be block in Tablet Mode */
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
 }
 .header .header-wrapper .header-items .menu ul li {
+    vertical-align: middle;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 7px 15px;
-    font-size: 15px;
     position: relative;
+    padding: 7px 15px;
     display: inline-block;
-    margin: 0;
+}
+.header .header-wrapper .header-items .menu ul li a {
+    font-size: 11px;
+    color: #808080;
+    padding-bottom: 4px;
+
+}
+.header-active {
+    padding: 0 5px;
+    color: black !important;
+    border-width: 40px;
+    font-weight: 600;
+    border-bottom: black solid 2px;
+}
+.header .header-wrapper .header-items .menu ul li a:hover {
+    /* padding-bottom: 5px; */
+    color: inherit;
+    border-bottom: 2px solid black;
+    transition: all ease-in;
+    transition-duration: 0.2s;
 }
 
 
 /* THE HEADER NAVBAR ICONS SECTION */
 .header .header-wrapper .header-items .navIcons {
+    white-space: nowrap;
     display: flex;
 }
 .header .header-wrapper .header-items .navIcons div {
-    padding: 0 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header .header-wrapper .header-items .navIcons div a {
+    width: 25px;
+    height: 25px;
+    color: inherit;
 }
