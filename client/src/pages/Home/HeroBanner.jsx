@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeroBanner.css'
 import image from "../../assets/images/heroBanner.jpg"
+import HomeCard from './HomeCard';
 
 export default function HeroBanner() {
   const backGround = {
@@ -11,6 +12,9 @@ export default function HeroBanner() {
     <>
       <div className="banner">
         <div className="img" style={backGround}>
+        </div>
+        <div className="banner-card">
+         <HomeCard />
         </div>
       </div>
       <div className="banner-cont">

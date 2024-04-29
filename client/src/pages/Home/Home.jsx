@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Home.css"
 import HeroBanner from './HeroBanner';
-import HomeCard from './HomeCard';
 import "../../components/UI/Card.css"
 
 export default function Home() {
@@ -10,7 +9,6 @@ export default function Home() {
       <HeroBanner/>
       <div className="home">
         <div className="home-wrapper">
-          <HomeCard />
           <div className="home-content">
             <br />
             <hr />

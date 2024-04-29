@@ -16,9 +16,15 @@
     background-repeat: no-repeat;
 
 }
+.banner .banner-card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform:translateY(50%);
+}
 
 .banner-cont {
-  margin-top: 15%;
+  margin-top: 90px;
   display: flex;
   width: 100%;
   justify-content: center;

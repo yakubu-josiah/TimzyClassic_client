@@ -4,7 +4,7 @@
     position: relative;
 }
 .home .home-wrapper {
-    margin-top: 12%;
+    margin-top: 400px;
 }
 
 .homeCard {
@@ -22,7 +22,7 @@
 @media screen and (max-width: 850px) and (min-width: 481px) {
 
     .home .home-wrapper {
-        margin-top: 120px;
+        margin-top: 600px;
     }
 
     .home .home-wrapper .home-content {
@@ -33,7 +33,7 @@
 /* Media query for smallest screens */
 @media screen and (max-width: 480px) {
     .home .home-wrapper {
-        margin-top: 150px;
+        margin-top: 850px;
     }
 
     .home .home-wrapper .home-content {
