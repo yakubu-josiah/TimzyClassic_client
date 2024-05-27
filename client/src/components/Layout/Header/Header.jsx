@@ -27,7 +27,7 @@ export default function Header() {
         <div className="header-wrapper">
           <div className="header-items">
 
-            <div className="logo"><Link to="/">The Logo</Link></div>
+            <div className="logo"><Link to="/">The Logo.</Link></div>
 
             <div className="menu">
               <ul>

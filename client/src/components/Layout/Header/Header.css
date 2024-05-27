@@ -38,7 +38,6 @@
     /* Display will be block in Tablet Mode */
     padding: 0;
     text-align: center;
-    overflow: hidden;
 }
 .header .header-wrapper .header-items .menu ul li {
     vertical-align: middle;
@@ -63,7 +62,6 @@
     border-bottom: black solid 2px;
 }
 .header .header-wrapper .header-items .menu ul li a:hover {
-    /* padding-bottom: 5px; */
     color: inherit;
     border-bottom: 2px solid black;
     transition: all ease-in-out;
