@@ -2,7 +2,8 @@ import React from 'react'
 import data1 from "../../assets/images/data1.jpg"
 import data2 from "../../assets/images/data2.jpg"
 import data3 from "../../assets/images/data4.jpg"
-import Card from '../../components/UI/Card.jsx'
+import { Link } from 'react-router-dom'
+import "./HomeCard.css";
 
 export default function HomeCard() {
     const data = 
@@ -33,14 +34,22 @@ export default function HomeCard() {
         }
     ]
 
-
   return (
-    <div className="homeCard">
-        <div className="homeCard-wrap">
-            <div className="cards">
-                <div className="cards-items">
+    <div className="HC">
+        <div className="HC_wrap">
+            <div className="HC_cards">
+                <div className="HC_cards-items">
                     {data.map(item=>(
-                        <Card item={item} key={item.id}/>
+                        <div className="HC_card" >
+                            <Link to={`/product/${item.id}`}>
+                                <div style={{ backgroundImage: `url(${item.image})` }}>
+                                    <div>
+                                        <h6>The</h6>
+                                        <h3>{item.title}</h3>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
                     ))}
                 </div>
             </div>
