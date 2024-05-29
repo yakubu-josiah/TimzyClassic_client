@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
@@ -23,29 +23,32 @@ export default function Header() {
   return (
     <>
       <Announcement />
-      <div className={`header ${!checkRoute("/") && "header-bg"}`}>
-        <div className="header-wrapper">
-          <div className="header-items">
+      <div className={`HD ${!checkRoute("/") && "HD_bg"}`}>
+        <div className="HD_wrapper">
+          <div className="HD_items">
 
-            <div className="logo"><Link to="/">The Logo.</Link></div>
+            <div className="HD_logo"><Link to="/">The Logo.</Link></div>
 
-            <div className="menu">
+            <div className="HD_menu">
               <ul>
-                <li><Link className={`${checkRoute("/pages/products") && "header-active"}`} to="/pages/products">Shop</Link></li>
-                <li><Link className={`${checkRoute("/pages/about-us") && "header-active"}`} to="/pages/about-us">About</Link></li>
-                <li><Link className={`${checkRoute("/pages/blogs") && "header-active"}`} to="/pages/blogs">Blogs</Link></li>
-                <li><Link className={`${checkRoute("/pages/contact-us") && "header-active"}`} to="/pages/contact-us">Contact</Link></li>
+                <li><Link className={`${checkRoute("/pages/products") && "HD_active"}`} to="/pages/products">Shop</Link></li>
+                <li><Link className={`${checkRoute("/pages/about-us") && "HD_active"}`} to="/pages/about-us">About</Link></li>
+                <li><Link className={`${checkRoute("/pages/blogs") && "HD_active"}`} to="/pages/blogs">Blogs</Link></li>
+                <li><Link className={`${checkRoute("/pages/contact-us") && "HD_active"}`} to="/pages/contact-us">Contact</Link></li>
               </ul>
             </div>
 
-            <div className="navIcons">
+            <div className="HD_navIcons">
               <div><Link to="/my-account"><PersonOutlineOutlinedIcon /></Link></div>
               <div><Link to="/search/:q"><SearchOutlinedIcon /></Link></div>
               <div><Link to="/cart"><ShoppingBagOutlinedIcon /></Link></div>
             </div>
+
+
             
           </div>
         </div>
+        
       </div>
     </>
   )
