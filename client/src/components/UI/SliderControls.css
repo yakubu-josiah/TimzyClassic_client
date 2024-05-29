@@ -1,0 +1,25 @@
+.SC-paginate {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.SC-paginate .right, 
+.SC-paginate .left {
+    position: absolute;
+    padding: 5px 8px;
+    align-items: center;
+    background: #be4646;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.SC-paginate .right {
+   right: 0;
+   margin-right: 8px;
+}
+.SC-paginate .left {
+   left: 0;
+   margin-left: 8px;
+}
