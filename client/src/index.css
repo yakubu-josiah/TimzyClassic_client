@@ -1,12 +1,10 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-style: normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-html::-webkit-scrollbar {
-    display: none;
-}
 html {
     scrollbar-width: none;
 }
@@ -22,9 +20,8 @@ html {
 .announcement {
     z-index: 2;
     width: 100%;
-    background: #ec7b7b;
+    background: #be4646;
     padding: 0;
-    /* text-align: center; */
 }
 .announcement p {
     color: #ffffff;
@@ -57,4 +54,5 @@ main {
     flex: 1;
     display: block;
     background: #ffffff;
+    color: #808080;
 }
