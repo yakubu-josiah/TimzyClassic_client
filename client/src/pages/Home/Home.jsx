@@ -12,6 +12,7 @@ import data8 from "../../assets/images/data3.jpg";
 import CollectionSlide from '../../components/UI/CollectionSlide';
 import ProductSlider from '../../components/UI/ProductSlider';
 import SliderControls from '../../components/UI/SliderControls';
+import ServiceFeatures from '../../components/UI/ServiceFeatures';
 
 export default function Home() {
   const featuredSliderRef = useRef(null);
@@ -93,6 +94,7 @@ export default function Home() {
       <div className="HM">
         <div className="HM_overlay">
           <div className="HM_wrap">
+
             <div className="HM_intro">
               <p>HELLO</p>
               <h1>Timzy Classic Man</h1>
@@ -124,19 +126,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="HM_intro">
-              <p>New Arrivals</p>
-              <h1>The Lifestyle Collection</h1>
-              <div>
-                <p>We are a premium brand consisting of the finest material that perfectly define what we are made of, and that is black, strength, beauty, intelligence and most importantly style.</p>
-              </div>
-            </div>
 
             {/* COLLECTION SLIDER HERE */}
             <div>
               < CollectionSlide type="featured" />
             </div>
 
+
+            {/* SERVICE FEATURES HERE */}
+            <ServiceFeatures />
 
             {/* ALL TRENDING COLLECTION HERE */}
             <div className="HM_slider" style={sliderBackground}>

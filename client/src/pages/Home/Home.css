@@ -18,26 +18,18 @@
     width: 100%;
 }
 
-.HM .HM_intro {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.HM .HM_overlay .HM_wrap .HM_intro div{
-    width: 85%;
-    margin: auto;
-}
-
-.HM .HM_intro p {
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: #a52a2a;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
 .HM .HM_overlay .HM_wrap .HM_intro {
     padding: 0;
     width: 100%;
+}
+
+
+.HM .HM_intro p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #be4646;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .HM .HM_overlay .HM_wrap .HM_intro h1 {
@@ -49,7 +41,7 @@
     word-spacing: 8px;
     margin-bottom: 15px;
 }
-.HM .HM_intro div p {
+.HM .HM_overlay .HM_wrap .HM_intro div p {
     font-size: 14px;
     font-weight: lighter;
     letter-spacing: 0;
@@ -60,7 +52,6 @@
 .HM .HM_overlay .HM_wrap .HM_slider{
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -157,6 +148,10 @@
     }
     .home .HM_intro div p {
         text-wrap: pretty;
+    }
+    .HM .HM_overlay .HM_wrap .HM_intro div p {
+        font-weight: 400;
+        font-size: 12px;
     }
     .HM .HM_overlay .HM_wrap .HM_featured .HM_wrap {
         grid-template-columns: repeat(2, 1fr);
