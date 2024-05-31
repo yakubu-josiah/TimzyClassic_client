@@ -2,6 +2,7 @@ import React from 'react'
 import './HeroBanner.css'
 import image from "../../assets/images/heroBanner.jpg"
 import HomeCard from './HomeCard';
+import { Link } from 'react-router-dom';
 
 export default function HeroBanner() {
   const backGround = {
@@ -20,10 +21,10 @@ export default function HeroBanner() {
       <div className="banner-cont">
         <div className="banner-wrap">
           <div className="banner-text">
-            <h3>The</h3>
-            <h1>Breezy collection</h1>
+            <h5>The</h5>
+            <h1>Breezy <span>collection</span></h1>
           </div>
-          <button>BUY NOW</button>
+          <Link to="/pages/products"><button>SHOP NOW</button></Link>
         </div>
       </div>
     </>
