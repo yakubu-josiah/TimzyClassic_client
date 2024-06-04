@@ -78,6 +78,13 @@ export default function CollectionSlide({ type }) {
 
     return (
         <div className="CS">
+            <div className="CS_intro">
+              <p>NEW ARRIVALS</p>
+              <h1>The Lifestyle Collection</h1>
+              <div>
+                <p>We are a premium brand consisting of the finest material that perfectly define what we are made of, and that is black, strength, beauty, intelligence and most importantly style.</p>
+              </div>
+            </div>
             <div className="CS_cont">
                 <div className="CS_images">
                     {data.map((item, index) => (
@@ -90,7 +97,9 @@ export default function CollectionSlide({ type }) {
                             <div className={`CS_details ${activeIndex === index ? "CS_details" : ""}`}>
                                 <h2>₦{item.price}</h2>
                                 <p>₦{item.price + 4200} </p>
-                                <Link to={`/product/${item.id}`}>View More</Link>
+                                <button>
+                                    <Link to={`/product/${item.id}`}>View More</Link>
+                                </button>
                             </div>
                         </div>
                     ))}
