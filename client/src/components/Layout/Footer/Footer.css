@@ -1,8 +1,9 @@
 footer {
     width: 100%;
     background-color: #ddfcb5;
+    background: linear-gradient(to right, #d3fcff, #fbf0df, #f6f6f7, #c7d3ca, #d9e8f9);
     padding: 30px 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 footer .wrapper {
     max-width: 450px;
@@ -41,16 +42,15 @@ footer .wrapper .top div form input {
     padding-right: 45px;
     font-size: 1rem;
     border: 0;
-    overflow: hidden;
     background: transparent;
-    border-bottom: 2px white solid;
+    border-bottom: 2px gray solid;
 }
 footer .wrapper .top div form input::placeholder {
     font-size: 1rem;
     color: #808080;
 }
 footer .wrapper .top div form input:focus, footer .wrapper .bottom div form select, footer .wrapper .bottom div form select:active{
-    border-color: white;
+    border-color: gray;
     outline: none;
 
 }
@@ -71,9 +71,8 @@ footer .wrapper .bottom .wrap form select{
     font-size: 1rem;
     font-weight: bold;
     border: 0;
-    overflow: hidden;
     background: transparent;
-    border-bottom: 2px white solid;
+    border-bottom: 2px gray solid;
     appearance: none; /* Remove default arrow icon in some browsers */
     -webkit-appearance: none; /* For WebKit-based browsers */
     -moz-appearance: none; /* For Firefox */
@@ -85,8 +84,7 @@ footer .wrapper .bottom .wrap form select{
 footer .wrapper .bottom .wrap form select option {
     position: relative;
     width: 200px;
-    background: #ddfcb5;
-    padding: 4px 30px;
+    /* padding: 4px 30px; */
 }
 footer .wrapper .bottom .wrap div .socials{
     display: flex;
