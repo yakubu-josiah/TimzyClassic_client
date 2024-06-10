@@ -3,45 +3,32 @@ import "./ProductSlider.css";
 import { Link } from 'react-router-dom';
 
 export default function ProductSlider({data}) {
-
-    // const data = 
-    // [
-    //     {
-    //         id: "600dc3b5d617e547a0e74cb9",
-    //         title: "Mitchell Fitzgerald",
-    //         price: 45000,
-    //         address: "48 Flatlands Avenue, Cutter, North Dakota",
-    //         isNew: true,
-    //         image: data1
-    //     },
-    //     {
-    //         id: "600dc3b5c4e60ba2ebf06569",
-    //         title: "Howell Faulkner",
-    //         price: 40000,
-    //         address: "77 Hemlock Street, Hasty, Florida",
-    //         isNew: true,
-    //         image: data2
-    //     },
-    //     {
-    //         id: "600dc3b5c435fd0bas2bf069",
-    //         title: "Howell Faulkner",
-    //         price: 70000,
-    //         address: "77 Hemlock Street, Hasty, Florida",
-    //         isNew: false,
-    //         image: data3
-    //     }
-    // ]
+    const formatPrice = (price) => {
+        return price && price !== 0 ? (
+          `₦${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
+        ) : (
+            ''
+        )
+    }
 
     return (
-        <div className="product-slider">
-            <div className="product-card" >
+        <div className="PS_slider">
+            <div className="PS_card" >
                 <Link to={`/product/${data.id}`}>
-                    <div className="imgBox" style={{ backgroundImage: `url(${data.image})` }}>
+                    <div className='PS_imgBox'>
+                        <div className="PS_img" style={{ backgroundImage: `url(${data.image})` }}></div>
                     </div>
-                    <div className="product-details">
+                    <div className="PS_details">
                         <h6>The</h6>
                         <h3>{data.name}</h3>
-                        <p>₦{data.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+                        <div className='PS_prices'>
+                            <p>{formatPrice(data.price)}</p>
+                            <div> 
+                                <p>{formatPrice(data.price + 45200)}</p> 
+                                <p id='off'>49% off</p> 
+                            </div>
+                        </div>
+
                     </div>
                 </Link>
             </div>
