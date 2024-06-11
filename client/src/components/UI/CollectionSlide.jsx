@@ -75,6 +75,12 @@ export default function CollectionSlide({ type }) {
         setActiveIndex(index);
     };
     
+    const formatPrice = (price) => {
+        return new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+        }).format(price);
+    };
 
     return (
         <div className="CS">
@@ -95,8 +101,8 @@ export default function CollectionSlide({ type }) {
                         >
                             <img src={item.image} alt={item.title} />
                             <div className={`CS_details ${activeIndex === index ? "CS_details" : ""}`}>
-                                <h2>₦{item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h2>
-                                <p>₦{item.price + 4200} </p>
+                                <h2>{formatPrice(item.price)}</h2>
+                                <p>{formatPrice(item.price + 4200)}</p>
                                 <button>
                                     <Link to={`/product/${item.id}`}>BUY NOW</Link>
                                 </button>
