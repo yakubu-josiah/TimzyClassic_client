@@ -11,39 +11,7 @@
 
 .PS_slider .PS_card .PS_imgBox .PS_img {
     height: 400px;
-    width: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.PS_slider .PS_card .PS_details {
-    margin: 20px 0 50px 0;
-    color: #fff;
-    text-align: start;
-    padding: 5px;
-}
-
-.PS_slider .PS_card .PS_details .PS_prices {
-    display: flex;
-    gap: 5px;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-weight: bolder;
-}
-
-.PS_slider .PS_card .PS_details .PS_prices div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-wrap: nowrap;
-    color: #999999;
-}
-.PS_slider .PS_card .PS_details .PS_prices div p {
-    text-decoration: line-through;
-}
-
-.PS_slider .PS_card .PS_details .PS_prices div #off {
-    color: rgb(34, 170, 0);
-    text-decoration: none;
 }
