@@ -85,6 +85,7 @@
     width: 100%;
     display: none;
     position: absolute;
+    margin: 0 auto;
     background: rgb(28 28 28 / 71%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -92,7 +93,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     bottom: 0;
     color: #878886;
-    padding-bottom: 10px;
+    padding: 10px;
     opacity: 0;
     animation: showContent 1s ease-in-out 0.1s 1 forwards;
 }
@@ -111,48 +112,11 @@
 }
 
 .CS .CS_cont .CS_images .CS_img .CS_details p{
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 5px;
-    text-decoration: line-through;
-    line-height: 20px;
-    text-transform: uppercase;
     transition: 0.7s ease;
     opacity: 0;
     animation: showContent 1s ease-in-out 0.3s 1 forwards;
 }
 
-.CS .CS_cont .CS_images .CS_img .CS_details button {
-    display: block;
-    margin: 0 auto;
-    padding: 1px;
-    border: 1px solid #be4646;
-
-}
-.CS .CS_cont .CS_images .CS_img .CS_details button a {
-    display: block;
-    padding: 8px 13px;
-    width: 100%;
-    height: 100%;
-    font-weight: 500; 
-    color: #4e4c4c;
-    letter-spacing: 2px;
-    border: 1px solid #be4646;
-    backdrop-filter: blur(3px);
-    opacity: 0;
-    animation: showContent 1s ease-in-out 0.1s 1 forwards;
-    background: linear-gradient(to right, #d3fcff, #fbf0df, #f6f6f7, #c7d3ca, #d9e8f9);
-}
-.CS .CS_cont .CS_images .CS_img .CS_details a:hover{
-    margin: 0;
-    cursor: pointer;
-    background: #be4646;
-    border: 1px solid #be4646;
-    color: #ffffff;
-    transition: all ease 0.4s;
-}
 .CS_active {
     cursor: default !important;
     width: 70% !important;
@@ -160,8 +124,6 @@
 .CS_active .CS_details {
     display: block !important;
 }
-
-
 
 
 @media screen and (max-width: 850px) and (min-width: 481px) {
@@ -173,6 +135,9 @@
 
 /* Media query for smallest screens */
 @media (max-width: 480px){
+    .CS .CS_cont .CS_images .CS_img .CS_details {
+        padding: 8px;
+    }
     .CS .CS_cont .CS_images{
         gap: 2px;
     }

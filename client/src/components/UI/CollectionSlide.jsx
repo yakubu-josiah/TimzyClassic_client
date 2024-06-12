@@ -8,6 +8,7 @@ import data6 from "../../assets/images/data3.jpg"
 import data8 from "../../assets/images/data5.jpg"
 import "./CollectionSlide.css"
 import { Link } from "react-router-dom";
+import ProductDetails from "./ProductDetails";
 
 const data = 
 [
@@ -101,11 +102,9 @@ export default function CollectionSlide({ type }) {
                         >
                             <img src={item.image} alt={item.title} />
                             <div className={`CS_details ${activeIndex === index ? "CS_details" : ""}`}>
-                                <h2>{formatPrice(item.price)}</h2>
-                                <p>{formatPrice(item.price + 4200)}</p>
-                                <button>
-                                    <Link to={`/product/${item.id}`}>BUY NOW</Link>
-                                </button>
+                                <Link to={`/product/${item.id}`}>
+                                    <ProductDetails name={item.title} price={item.price} />
+                                </Link>
                             </div>
                         </div>
                     ))}

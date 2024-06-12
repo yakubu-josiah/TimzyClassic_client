@@ -1,5 +1,4 @@
 .PD_details {
-    margin: 20px 0 50px 0;
     color: #fff;
     text-align: start;
     padding: 5px;
@@ -15,16 +14,24 @@
 
 .PD_details .PD_prices div {
     display: flex;
-    align-items: center;
     gap: 5px;
-    text-wrap: nowrap;
+    align-items: center;
     color: #999999;
 }
+
 .PD_details .PD_prices div p {
     text-decoration: line-through;
 }
-
+        
 .PD_details .PD_prices div #off {
     color: #22aa00;
+    gap: 5px;
+    text-wrap: nowrap;
     text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+    .PD_details .PD_prices {
+        display: grid;
+    }
 }

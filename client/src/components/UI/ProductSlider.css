@@ -7,6 +7,8 @@
 .PS_slider .PS_card .PS_imgBox {
     background: #fff;
     padding: 4px;
+    min-width: 220px;
+    margin-bottom: 20px;
 }
 
 .PS_slider .PS_card .PS_imgBox .PS_img {
