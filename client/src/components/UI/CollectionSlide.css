@@ -6,6 +6,11 @@
     background: linear-gradient(to right, #d3fcff, #fbf0df, #f6f6f7, #c7d3ca, #d9e8f9);
 }
 
+.CS .CS_intro div {
+    margin: auto;
+    max-width: 800px;
+}
+
 .CS .CS_intro p{
     font-size: 14px;
     letter-spacing: 2px;
@@ -32,6 +37,7 @@
     white-space: wrap;
     text-wrap: balance;
     margin-bottom: 40px;
+    padding: 0 10px;
 }
 
 .CS .CS_cont {
