@@ -23,6 +23,10 @@
     width: 100%;
 }
 
+.HM .HM_overlay .HM_wrap .HM_intro div {
+    margin: auto;
+    max-width: 800px;
+}
 
 .HM .HM_intro p {
     font-size: 12px;
