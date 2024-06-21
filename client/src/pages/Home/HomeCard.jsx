@@ -40,7 +40,7 @@ export default function HomeCard() {
             <div className="HC_cards">
                 <div className="HC_cards-items">
                     {data.map(item=>(
-                        <div className="HC_card" >
+                        <div className="HC_card" key={item.id}>
                             <Link to={`/product/${item.id}`}>
                                 <div style={{ backgroundImage: `url(${item.image})` }}>
                                     <div>
