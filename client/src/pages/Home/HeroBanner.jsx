@@ -24,7 +24,7 @@ export default function HeroBanner() {
             <h5>The</h5>
             <h1>Breezy <span>collection</span></h1>
           </div>
-          <Link to="/pages/products"><button>SHOP NOW</button></Link>
+          <Link to="/pages/shop"><button>SHOP NOW</button></Link>
         </div>
       </div>
     </>

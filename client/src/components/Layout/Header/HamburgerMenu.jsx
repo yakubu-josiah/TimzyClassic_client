@@ -21,7 +21,7 @@ export default function HamburgerMenu() {
             <div className="HB_menu">
                 <div>
                     <ul>
-                        <li><Link onClick={toggleMenu} to="/pages/products">Shop</Link></li>
+                        <li><Link onClick={toggleMenu} to="/pages/shop">Shop</Link></li>
                         <li><Link onClick={toggleMenu} to="/pages/about-us">About</Link></li>
                         <li><Link onClick={toggleMenu} to="/pages/blogs">Blogs</Link></li>
                         <li><Link onClick={toggleMenu} to="/pages/contact-us">Contact</Link></li>

@@ -31,7 +31,7 @@ export default function Header() {
 
             <div className="HD_menu">
               <ul>
-                <li><Link className={`${checkRoute("/pages/products") && "HD_active"}`} to="/pages/products">Shop</Link></li>
+                <li><Link className={`${checkRoute("/pages/shop") && "HD_active"}`} to="/pages/shop">Shop</Link></li>
                 <li><Link className={`${checkRoute("/pages/about-us") && "HD_active"}`} to="/pages/about-us">About</Link></li>
                 <li><Link className={`${checkRoute("/pages/blogs") && "HD_active"}`} to="/pages/blogs">Blogs</Link></li>
                 <li><Link className={`${checkRoute("/pages/contact-us") && "HD_active"}`} to="/pages/contact-us">Contact</Link></li>
