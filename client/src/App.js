@@ -15,9 +15,9 @@ function App() {
             <Route path="/" element={<Layout />}>
 
               <Route index element={<Home />} />
-              <Route path="/pages/shop" element={<Shop />} />
-              <Route path="/product/:id" element={<Product />} />
-              <Route path="/pages/products" element={<Products />} />
+              <Route path="/shop-collections" element={<Shop />} />
+              <Route path="/shop-collections/:collectionName" element={<Products />} />
+              <Route path="/shop-collections/:collectionName/:collectionId" element={<Product />} />
 
               
               <Route path="*" element={<NotFound />}></Route>

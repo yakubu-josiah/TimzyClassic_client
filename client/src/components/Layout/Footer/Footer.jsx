@@ -45,12 +45,12 @@ export default function Footer() {
             </div>
             <div className="site_links">
               <div>
-                <Link to="/pages/contact-us">Contact</Link>
-                <Link to="/pages/frequently-asked-questions">FAQ</Link>
-                <Link to="/pages/shipping">Shipping</Link>
-                <Link to="/page/returns">Returns</Link>
-                <Link to="/page/terms-of-use">Terms of Use</Link>
-                <Link to="/page/privacy-policy">Privacy Policy</Link>
+                <Link to="/contact-us">Contact</Link>
+                <Link to="/frequently-asked-questions">FAQ</Link>
+                <Link to="/shipping">Shipping</Link>
+                <Link to="/returns">Returns</Link>
+                <Link to="/terms-of-use">Terms of Use</Link>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </div>
               <div>&copy; 2024 Timzy Classic</div>
             </div>

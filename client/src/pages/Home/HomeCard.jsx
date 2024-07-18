@@ -3,6 +3,7 @@ import data1 from "../../assets/images/data1.jpg"
 import data2 from "../../assets/images/data2.jpg"
 import data3 from "../../assets/images/data4.jpg"
 import { Link } from 'react-router-dom'
+import { routeFormat } from "../../Utils/routeFormat"
 import "./HomeCard.css";
 
 export default function HomeCard() {
@@ -34,6 +35,7 @@ export default function HomeCard() {
         }
     ]
 
+    
   return (
     <div className="HC">
         <div className="HC_wrap">
@@ -41,7 +43,7 @@ export default function HomeCard() {
                 <div className="HC_cards-items">
                     {data.map(item=>(
                         <div className="HC_card" key={item.id}>
-                            <Link to={`/product/${item.id}`}>
+                            <Link to={`/shop-collections/${routeFormat(item.title)}/${item.id}`}>
                                 <div style={{ backgroundImage: `url(${item.image})` }}>
                                     <div>
                                         <h6>The</h6>

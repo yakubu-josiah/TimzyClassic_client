@@ -32,32 +32,32 @@ export default function HamburgerMenu() {
                 <div>
                     <ul>
                         <li>
-                            <Link onClick={toggleMenu} to="/pages/shop">
-                                <div className={`HB_active ${checkRoute("/pages/shop") && "HB_links"}`}>
+                            <Link onClick={toggleMenu} to="/shop-collections">
+                                <div className={`HB_active ${checkRoute("/shop-collections") && "HB_links"}`}>
                                     <StoreOutlinedIcon />
                                     Shop
                                 </div>
                             </Link>
                         </li>
                         <li>
-                            <Link onClick={toggleMenu} to="/pages/blogs">
-                                <div className={`HB_active ${checkRoute("/pages/blogs") && "HB_links"}`} >
+                            <Link onClick={toggleMenu} to="/blogs">
+                                <div className={`HB_active ${checkRoute("/blogs") && "HB_links"}`} >
                                     <NewspaperOutlinedIcon />
                                     Blogs
                                 </div>
                             </Link>
                         </li>
                         <li>
-                            <Link onClick={toggleMenu} to="/pages/about-us">
-                                <div className={`HB_active ${checkRoute("/pages/about-us") && "HB_links"}`}>
+                            <Link onClick={toggleMenu} to="/about-us">
+                                <div className={`HB_active ${checkRoute("/about-us") && "HB_links"}`}>
                                     <InfoOutlinedIcon />
                                     About
                                 </div>
                             </Link>
                         </li>
                         <li>
-                            <Link onClick={toggleMenu} to="/pages/contact-us">
-                                <div className={`HB_active ${checkRoute("/pages/contact-us") && "HB_links"}`}>
+                            <Link onClick={toggleMenu} to="/contact-us">
+                                <div className={`HB_active ${checkRoute("/contact-us") && "HB_links"}`}>
                                     <ContactSupportOutlinedIcon />
                                     Contact
                                 </div>

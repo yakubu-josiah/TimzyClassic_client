@@ -1,10 +1,9 @@
 import React, {  useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import './Header.css'
-import { Link } from 'react-router-dom';
+import './Header.css';
 import Announcement from '../Announcement';
 
 export default function Header() {
@@ -31,10 +30,10 @@ export default function Header() {
 
             <div className="HD_menu">
               <ul>
-                <li><Link className={`${checkRoute("/pages/shop") && "HD_active"}`} to="/pages/shop">Shop</Link></li>
-                <li><Link className={`${checkRoute("/pages/about-us") && "HD_active"}`} to="/pages/about-us">About</Link></li>
-                <li><Link className={`${checkRoute("/pages/blogs") && "HD_active"}`} to="/pages/blogs">Blogs</Link></li>
-                <li><Link className={`${checkRoute("/pages/contact-us") && "HD_active"}`} to="/pages/contact-us">Contact</Link></li>
+                <li><Link className={`${checkRoute("shop-collections") && "HD_active"}`} to="shop-collections">Shop</Link></li>
+                <li><Link className={`${checkRoute("about-us") && "HD_active"}`} to="about-us">About</Link></li>
+                <li><Link className={`${checkRoute("blogs") && "HD_active"}`} to="blogs">Blogs</Link></li>
+                <li><Link className={`${checkRoute("contact-us") && "HD_active"}`} to="contact-us">Contact</Link></li>
               </ul>
             </div>
 
