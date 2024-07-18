@@ -8,6 +8,7 @@
 html {
     scrollbar-width: none;
 }
+
 .layout {
     position: relative;
     display: flex;
@@ -55,4 +56,14 @@ main {
     display: block;
     background: #ffffff;
     color: #808080;
+}
+
+
+@media screen and (max-width: 850px) and (min-width: 481px) {
+
+}
+
+
+@media (max-width: 480px){
+
 }
