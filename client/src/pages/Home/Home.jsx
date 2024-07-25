@@ -10,7 +10,7 @@ import data5 from "../../assets/images/data44.jpg";
 import data6 from "../../assets/images/data1.jpg";
 import data8 from "../../assets/images/data3.jpg";
 import CollectionSlide from '../../components/UI/CollectionSlide';
-import ProductSlider from '../../components/UI/ProductSlider';
+import ProductCard from '../../components/UI/ProductCard';
 import SliderControls from '../../components/UI/SliderControls';
 import ServiceFeatures from '../../components/UI/ServiceFeatures';
 
@@ -30,64 +30,64 @@ export default function Home() {
   };
 
   const data =
-    [
-      {
-        id: "ddf1dtr33412QQ7e547a0e74cb9",
-        name: "Mitchell Fitzgerald",
-        price: 45000,
-        address: "48 Flatlands Avenue, Cutter, North Dakota",
-        isNew: true,
-        image: data1
-      },
-      {
-        id: "e2ssc3b5c4e6rt4ba2ebf06569",
-        name: "Howell Faulkner",
-        price: 40000,
-        address: "77 Hemlock Street, Hasty, Florida",
-        isNew: true,
-        image: data2
-      },
-      {
-        id: "2e4453dse34c435fds0bas2bf069",
-        name: "Eris Dortmund",
-        price: 70000,
-        address: "77 Hemlock Street, Hasty, Florida",
-        isNew: false,
-        image: data3
-      },
-      {
-        id: "34yu6b5cwe21xdx1c3fds4d52s2bf069",
-        name: "Madison Powell",
-        price: 2300,
-        address: "77 Hemlock Street, Hasty, Florida",
-        isNew: false,
-        image: data4
-      },
-      {
-        id: "7623v41a2c435fd0bas2bf069",
-        name: "Keith Cannie",
-        price: 50340,
-        address: "77 Hemlock Street, Hasty, Florida",
-        isNew: false,
-        image: data5
-      },
-      {
-        id: "2345c435fcx33d23rf2b345f069",
-        name: "Dennis Rey",
-        price: 10043,
-        address: "77 Hemlock Street, Hasty, Florida",
-        isNew: false,
-        image: data6
-      },
-      {
-        id: "6er335c435fd23rf4t542bf069",
-        name: "Polish Welder",
-        price: 90434,
-        address: "77 Hemlock Street, Hasty, Florida",
-        isNew: false,
-        image: data8
-      }
-    ]
+  [
+    {
+      id: "ddf1dtr33412QQ7e547a0e74cb9",
+      name: "Mitchell Fitzgerald",
+      price: 45000,
+      address: "48 Flatlands Avenue, Cutter, North Dakota",
+      isNew: true,
+      image: data1
+    },
+    {
+      id: "e2ssc3b5c4e6rt4ba2ebf06569",
+      name: "Howell Faulkner",
+      price: 40000,
+      address: "77 Hemlock Street, Hasty, Florida",
+      isNew: true,
+      image: data2
+    },
+    {
+      id: "2e4453dse34c435fds0bas2bf069",
+      name: "Eris Dortmund",
+      price: 70000,
+      address: "77 Hemlock Street, Hasty, Florida",
+      isNew: false,
+      image: data3
+    },
+    {
+      id: "34yu6b5cwe21xdx1c3fds4d52s2bf069",
+      name: "Madison Powell",
+      price: 2300,
+      address: "77 Hemlock Street, Hasty, Florida",
+      isNew: false,
+      image: data4
+    },
+    {
+      id: "7623v41a2c435fd0bas2bf069",
+      name: "Keith Cannie",
+      price: 50340,
+      address: "77 Hemlock Street, Hasty, Florida",
+      isNew: false,
+      image: data5
+    },
+    {
+      id: "2345c435fcx33d23rf2b345f069",
+      name: "Dennis Rey",
+      price: 10043,
+      address: "77 Hemlock Street, Hasty, Florida",
+      isNew: false,
+      image: data6
+    },
+    {
+      id: "6er335c435fd23rf4t542bf069",
+      name: "Polish Welder",
+      price: 90434,
+      address: "77 Hemlock Street, Hasty, Florida",
+      isNew: false,
+      image: data8
+    }
+  ]
   return (
     <>
       <HeroBanner />
@@ -113,7 +113,7 @@ export default function Home() {
                 <div className="HM_slideCont">
                   <div className="HM_slide" ref={featuredSliderRef}>
                     {data.map((item) => (
-                      <ProductSlider
+                      <ProductCard
                         key={item.id}
                         data={item}
                       />
@@ -146,7 +146,7 @@ export default function Home() {
                 <div className="HM_slideCont">
                   <div className="HM_slide" ref={trendingSliderRef}>
                     {data.map((item) => (
-                      <ProductSlider
+                      <ProductCard
                         key={item.id}
                         data={item}
                       />
