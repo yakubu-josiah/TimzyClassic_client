@@ -1,0 +1,124 @@
+.PDS {
+    width: 100%;
+}
+
+.PDS .PDS_hero{
+    width: 100%;
+    height: 150px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.PDS .PDS_hero .PDS_lead {
+    background: rgba(0, 0, 0, 0.41);
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+.PDS .PDS_hero .PDS_lead::after {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    opacity:.7;
+    mix-blend-mode:color;
+    background:linear-gradient(120deg, #ae63e4, #33d0ff, #e463b0);
+}
+
+.PDS .PDS_wrap {
+    display: flex;
+    gap: 3%;
+    padding: 0 3% 3%;
+}
+
+.PDS_left {
+    flex: 1;
+    position: sticky;
+    top: 120px;
+    border-radius: 8px;
+    margin: 0 0 120px;
+    text-align: start;
+    padding: 15px;
+    height: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.41);
+    background: rgb(0 0 0 / 70%);
+}
+
+
+.PDS .PDS_wrap .PDS_left .PDS_filter{
+    margin: 10px 0 30px;
+}
+
+.PDS .PDS_wrap .PDS_left .PDS_filter h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.PDS .PDS_wrap .PDS_left .PDS_filter .PDS_price {
+    display: block;
+    width: 100%;
+}
+.PDS .PDS_wrap .PDS_left .PDS_filter .PDS_price input{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.PDS .PDS_wrap .PDS_left .PDS_filter .PDS_price .label{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    width: 80%;
+    
+}
+
+.PDS .PDS_wrap .PDS_left .PDS_filter .PDS_price .label span{
+    width: 100%;
+    padding: 1px 5px;
+    border: 1px solid gray;
+}
+
+.PDS .PDS_wrap .PDS_left .PDS_filter .PDS_sort {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.PDS .PDS_wrap .PDS_left .PDS_filter .PDS_sort input {
+    margin-right: 3px;
+}
+
+.PDS .PDS_wrap .PDS_right {
+    flex: 3;
+    width: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.PDS .PDS_wrap .PDS_right .PDS_cards {
+    border-radius: 8px;
+    background: rgb(0 0 0 / 70%);
+    backdrop-filter: blur(0.9px);
+    border: 1px solid rgb(255 255 255 / 12%);
+    -webkit-backdrop-filter: blur(1.1px);
+}
+
+.PDS .PDS_wrap .PDS_right .PDS_cards .PDS_cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    padding: 15px;
+}
