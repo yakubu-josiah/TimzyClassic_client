@@ -7,6 +7,7 @@ import data5 from "../../assets/images/data5.jpg"
 import data6 from "../../assets/images/data3.jpg"
 import data8 from "../../assets/images/data5.jpg"
 import "./CollectionSlide.css"
+import { routeFormat } from "../../Utils/routeFormat";
 import { Link } from "react-router-dom";
 import ProductDetails from "./ProductDetails";
 
@@ -76,12 +77,12 @@ export default function CollectionSlide({ type }) {
         setActiveIndex(index);
     };
     
-    const formatPrice = (price) => {
-        return new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD',
-        }).format(price);
-    };
+    // const formatPrice = (price) => {
+    //     return new Intl.NumberFormat('en-US', {
+    //       style: 'currency',
+    //       currency: 'USD',
+    //     }).format(price);
+    // };
 
     return (
         <div className="CS">
@@ -102,7 +103,7 @@ export default function CollectionSlide({ type }) {
                         >
                             <img src={item.image} alt={item.title} />
                             <div className={`CS_details ${activeIndex === index ? "CS_details" : ""}`}>
-                                <Link to={`/product/${item.id}`}>
+                                <Link to={`/shop-collections/${routeFormat(item.title)}/${item.id}`}>
                                     <ProductDetails name={item.title} price={item.price} />
                                 </Link>
                             </div>
