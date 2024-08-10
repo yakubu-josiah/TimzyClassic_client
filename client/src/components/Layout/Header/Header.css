@@ -19,8 +19,6 @@
 }
 .HD_bg {
     background: linear-gradient(to right, #d3fcff, #fbf0df, #f6f6f7, #c7d3ca, #d9e8f9);
-    /* background: #f5d9d6; */
-
 }
 
 /* THE HEADER LOGO SECTION */
@@ -28,8 +26,6 @@
     font-size: xx-large;
     font-style: italic;
 }
-
-
 
 /* THE HEADER MENU SECTION */
 .HD .HD_wrapper .HD_items .HD_menu {
