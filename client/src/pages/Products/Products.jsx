@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import heroBg from "../../assets/images/heroBanner.jpg"
 import cardBg from "../../assets/images/sliderCard.webp"
@@ -15,7 +15,23 @@ import ProductCard from '../../components/UI/ProductCard';
 export default function Products() {
   const [maxPrice, setMaxPrice] = useState( 0);
   const { collectionName } = useParams();
+  const [filterMenu, setFilterMenu] = useState(false);
 
+
+  const toggleMenu = () => {
+    setFilterMenu(!filterMenu);
+  };
+
+
+
+  useEffect(() => {
+    document.body.classList.toggle('no-scroll', filterMenu);
+
+    return () => {
+      document.body.classList.remove('no-scroll')
+    };
+
+  }, [filterMenu])
 
   const data =
   [
@@ -92,10 +108,73 @@ export default function Products() {
           {collectionName.toUpperCase().replace(/-/g, ' ')}
         </h1>
       </div>
+      
+      <div className="PDS_filterX">
+        <div>
+          <div className="filterBTN" onClick={toggleMenu}>
+            <h4>FILTER <span></span></h4>
+          </div>
+
+          <div className="sortBTN">
+            SORT
+            <select className="select" name="" id="sort_items">
+              <option value="asc"> Price (Highest Price) </option>
+              <option value="desc"> Price (Lowest Price) </option>
+            </select>
+          </div>       
+        </div>
+      </div>
+
+      <div className={`FLT_menuTab ${filterMenu ? 'open' : ''}`}>
+        <div className="FLT_wrap">
+
+          <div className="FLT_head">
+            <h3><span onClick={toggleMenu}>x</span> FILTER BY</h3>
+          </div>
+          
+          <div className="FLT_filter">
+            <div className="FLT_cont">
+              <h3>CATEGORIES</h3>
+              <div className="FLT_item">
+                <input type="checkbox" id="1" value={1} />
+                <label htmlFor="1"> Suits</label>
+              </div>
+              <div className="FLT_item">
+                <input type="checkbox" id="2" value={2} />
+                <label htmlFor="2"> Native Attires</label>
+              </div>
+              <div className="FLT_item">
+                <input type="checkbox" id="3" value={3} />
+                <label htmlFor="3"> Caps</label>
+              </div>
+              <div className="FLT_item">
+                <input type="checkbox" id="4" value={4} />
+                <label htmlFor="4"> Beach Wears</label>
+              </div>
+            </div>
+
+            <div className="FLT_cont">
+              <h3>FILTER BY PRICE</h3>
+              <div className="FLT_price">
+                <input type="range" min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
+                <div className="label">
+                  <span>{maxPrice}</span> -
+                  <span>1000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="FLT_close">
+            <button onClick={toggleMenu}>CLOSE</button>
+          </div>
+        </div>
+      </div>
+      
+
       <div className="PDS_wrap">
         <div className="PDS_left">
           <div className="PDS_filter">
-            <h2>Category</h2>
+            <h2>Categories</h2>
             <div className="PDS_item">
               <input type="checkbox" id="1" value={1} />
               <label htmlFor="1"> Suits</label>
@@ -148,7 +227,7 @@ export default function Products() {
                 />
               ))}
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>

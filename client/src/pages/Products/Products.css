@@ -41,7 +41,7 @@
     padding: 0 3% 3%;
 }
 
-.PDS_left {
+.PDS .PDS_wrap .PDS_left {
     flex: 1;
     position: sticky;
     top: 120px;
@@ -102,7 +102,12 @@
 .PDS .PDS_wrap .PDS_right {
     flex: 3;
     width: 100%;
+    height: 100%;
     border-radius: 8px;
+}
+
+.PDS .PDS_wrap .PDS_right .PDS_backGround {
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -121,4 +126,198 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 10px;
     padding: 15px;
+}
+
+.PDS .PDS_filterX, .PDS .FLT_menuTab {
+    display: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+    .PDS .PDS_wrap .PDS_left {
+        display: none;
+    }
+
+    .PDS .PDS_hero {
+        margin-bottom: 0;
+    }
+
+    .PDS .PDS_hero .PDS_lead {
+        font-size: 25px;
+    }
+    
+    .PDS .PDS_wrap {
+        padding: 0;
+    }
+    
+    .PDS .PDS_wrap .PDS_right, .PDS .PDS_wrap .PDS_right .PDS_cards {
+        border-radius: 0;
+    }
+
+    .PDS .PDS_wrap .PDS_right .PDS_cards .PDS_cont {
+        gap: 45px 15px;
+        padding: 45px 20px;
+    }
+
+
+    .PDS .PDS_filterX, .PDS .FLT_menuTab {
+        display: block;
+    }
+
+    .PDS .PDS_filterX div{
+        display: grid;
+        grid: auto / repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        border-top: 1px solid #be4646;
+        border-bottom: 1px solid #be4646;
+        background-color: #fff;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .PDS .PDS_filterX div .filterBTN {
+        border-right: 2px solid #be4646;
+        display: flex;
+        justify-content: center;
+        padding: 13px 0;
+    }
+
+    .PDS .PSD_filterX div .filterBTN h4 {
+        font-weight: 100;
+        margin: auto;
+    }
+    
+    .PDS .PDS_filterX div .sortBTN {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+    }
+
+    .PDS .PDS_filterX div .sortBTN .select {
+        color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 20;
+        background: transparent;
+        pointer-events: auto;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    .PDS .PDS_filterX div .sortBTN  .select option {
+        color: #595959;
+    }
+    
+    .PDS .FLT_menuTab {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        color: white;
+        overflow: scroll;
+        text-align: start;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(1.9px);
+        -webkit-backdrop-filter: blur(1.9px);
+        transition: right 0.3s ease-in-out;
+    }
+    
+    .PDS .FLT_menuTab.open {
+        right: 0;
+    }
+    
+    .PDS .FLT_menuTab .FLT_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .PDS .FLT_menuTab .FLT_wrap .FLT_head{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        padding: 20px 25px;
+        border-bottom: 1px solid #595959;
+        font-size: 10px;
+    }
+    
+    .PDS .FLT_menuTab .FLT_wrap .FLT_head h3 span {
+        font-size: 25px;
+        font-weight: 900;
+        position: absolute;
+        left: 25px;
+        top: 11px;
+    }
+
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter {
+        width: 100%;
+        padding: 25px 30px;
+        font-weight: 300;
+    }
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont {
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont h3 {
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+    }
+
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_item {
+        padding-left: 10px;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_price input {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_price .label {
+        width: 200px;
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+    }
+    
+    .PDS .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_price .label span {
+        text-align: center;
+        width: 100%;
+        border: 1px solid #fff;
+    }
+
+    .PDS .FLT_menuTab .FLT_wrap .FLT_close {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px 25px;
+        border-top: 1px solid #595959;
+    }
+    .PDS .FLT_menuTab .FLT_wrap .FLT_close button {
+        width: 100%;
+        border: 0;
+        color: #fff;
+        letter-spacing: 2px;
+        padding: 15px;
+        background-color: rgb(49 49 49 / 90%);
+    }
 }
