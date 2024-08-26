@@ -3,10 +3,7 @@ import './ProductDetails.css'
 
 export default function ProductDetails({name, price}) {
     const formatPrice = (price) => {
-        return new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD',
-        }).format(price);
+        return `₦ ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.00`
     };
 
     return (
