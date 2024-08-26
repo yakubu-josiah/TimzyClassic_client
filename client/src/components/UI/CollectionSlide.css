@@ -92,7 +92,6 @@
     width: 100%;
     display: none;
     position: absolute;
-    /* margin: 0 auto; */
     background: rgb(28 28 28 / 71%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -153,6 +152,17 @@
 
 /* Media query for smallest screens */
 @media (max-width: 480px){
+    .CS .CS_cont .CS_images .CS_img:first-child, .CS .CS_cont .CS_images .CS_img:nth-child(7) {
+        height: 430px;
+    }
+    
+    .CS .CS_cont .CS_images .CS_img:nth-child(2), .CS .CS_cont .CS_images .CS_img:nth-child(6){
+        height: 510px;
+    }
+    
+    .CS .CS_cont .CS_images .CS_img:nth-child(3), .CS .CS_cont .CS_images .CS_img:nth-child(4), .CS .CS_cont .CS_images .CS_img:nth-child(5) {
+        height: 615px;
+    }
     .CS .CS_cont .CS_images .CS_img img {
         padding: 2px;
     }
