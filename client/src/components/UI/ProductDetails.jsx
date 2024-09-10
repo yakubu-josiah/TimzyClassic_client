@@ -3,7 +3,7 @@ import './ProductDetails.css'
 
 export default function ProductDetails({name, price}) {
     const formatPrice = (price) => {
-        return `₦ ${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.00`
+        return `₦ ${price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.00`
     };
 
     return (
