@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import photo1 from "../../assets/images/data1.jpg";
 import photo2 from "../../assets/images/data5.jpg";
 import photo3 from "../../assets/images/data3.jpg";
+import photo4 from "../../assets/images/data44.jpg";
 import StraightenSharpIcon from '@mui/icons-material/StraightenSharp';
 import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp';
 import AddShoppingCartSharpIcon from '@mui/icons-material/AddShoppingCartSharp';
@@ -27,6 +28,7 @@ export default function Product() {
     images: [
       photo1,
       photo2,
+      photo4,
       photo3
     ]
   }
@@ -77,14 +79,14 @@ export default function Product() {
               </div>
               <div className="size">
                 <span><StraightenSharpIcon /></span> 
-                <a href={'/unknown'}>Size Guide</a>
+                <a href={'/unknown'}>size guide</a>
 
               </div>
-              <ol><li>49% Off Sales. Discount applied in cart.</li></ol>
               <div className="cart">
                 <button><span><AddShoppingCartSharpIcon /></span> ADD TO CART</button>
                 <button><FavoriteBorderSharpIcon /></button>
               </div>
+              <ol><li>49% Off Sales. Discount applied in cart.</li></ol>
             </div>
             <hr />
 
