@@ -96,31 +96,25 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 4px solid #fff;
+    left: 0;
     bottom: 0;
+    opacity: 0;
+    padding: 20px 0 30px ;
     color: #878886;
-    padding: 10px;
-    opacity: 0;
-    animation: contentDisplay 1s ease-in-out 0.1s 1 forwards;
+    border-top: 4px solid #fff;
+    animation: showLink 1s ease-in-out 0.1s 1 forwards;
 }
 
-.CS .CS_cont .CS_images .CS_img .CS_details h2 {
-    font-size: 22px;
-    font-weight: 700;
-    text-align: left;
-    line-height: 44px;
-    text-transform: uppercase;
-    transition: 0.7s ease;
-    display: inline-block;
-    opacity: 0;
-    color: #ffffff;
-    animation: contentDisplay 1s ease-in-out 0.2s 1 forwards;
-}
 
-.CS .CS_cont .CS_images .CS_img .CS_details p{
-    transition: 0.7s ease;
+.CS .CS_cont .CS_images .CS_img .CS_details a{
     opacity: 0;
-    animation: contentDisplay 1s ease-in-out 0.3s 1 forwards;
+    color: #fff;
+    padding-bottom: 10px;
+    transition: 0.7s ease;
+    text-decoration: underline;
+    font-style: italic;
+    padding-bottom: 4px;
+    animation: showLink 1s ease-in-out 0.3s 1 forwards;
 }
 
 .CS_active {
@@ -131,7 +125,7 @@
     display: block !important;
 }
 
-@keyframes contentDisplay {
+@keyframes showLink {
     from{
         opacity: 0;
         transform: translate(0,100px);
@@ -168,6 +162,11 @@
     }
     .CS .CS_cont .CS_images .CS_img .CS_details {
         padding: 8px;
+        border: 0;
+        border-top: 4px solid #fff;
+    }
+    .CS .CS_cont .CS_images .CS_img .CS_details a {
+        font-size: smaller;
     }
     .CS .CS_cont .CS_images{
         gap: 0px;

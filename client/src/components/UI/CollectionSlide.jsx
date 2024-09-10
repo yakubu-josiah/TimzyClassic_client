@@ -9,7 +9,6 @@ import data8 from "../../assets/images/data5.jpg"
 import "./CollectionSlide.css"
 import { routeFormat } from "../../Utils/routeFormat";
 import { Link } from "react-router-dom";
-import ProductDetails from "./ProductDetails";
 
 const data = 
 [
@@ -95,7 +94,7 @@ export default function CollectionSlide({ type }) {
             </div>
             <div className="CS_cont">
                 <div className="CS_images">
-                    {data.map((item, index) => (
+                    {data?.map((item, index) => (
                         <div 
                             key={item.id} 
                             className={`CS_img ${activeIndex === index ? 'CS_active' : ''}`} 
@@ -104,7 +103,7 @@ export default function CollectionSlide({ type }) {
                             <img src={item.image} alt={item.title} />
                             <div className={`CS_details ${activeIndex === index ? "CS_details" : ""}`}>
                                 <Link to={`/shop-collections/${routeFormat(item.title)}/${item.id}`}>
-                                    <ProductDetails name={item.title} price={item.price} />
+                                    view-more
                                 </Link>
                             </div>
                         </div>
