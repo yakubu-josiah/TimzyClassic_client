@@ -1,0 +1,122 @@
+.CT {
+    color: #606060;
+    min-width: 380px;
+    background: linear-gradient(to right, #d9e8f9, #fbf0df, #f6f6f7, #c7d3ca, #d3fcff);
+}
+.CT .wrap{
+    width: 100%;
+    padding: 20px 0;
+}
+.CT .wrap .head {
+    display: flex;
+    padding-bottom: 12px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #b3b3b3ef;
+}
+.CT .wrap .head span svg{
+    cursor: pointer;
+    font-weight: lighter;
+    color: #be4646;
+    font-size: 28px;
+}
+.CT .wrap .product {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.CT .wrap .product .left {
+    flex: 2.3;
+    display: flex;
+    justify-content: start;
+    gap: 4px;
+    border-right: 1px solid #b3b3b3ef;
+}
+.CT .wrap .product .left div{
+    display: flex;
+    align-items: start;
+    padding: 5px 5px 0 ;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.CT .wrap .product .left div  p {
+    text-align: start;
+    text-wrap: nowrap;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.CT .wrap .product .left div .name {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.CT .wrap .product img{
+    height: 80px;
+    object-fit: cover;
+}
+.CT .wrap .product .left div h3 {
+    font-size: 15px;
+}
+.CT .wrap .product .right {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.CT .wrap .product .right div {
+    padding-top: 15px;
+    display: block;
+    gap: 2px;
+    padding-right: 20px;
+    padding-left: 8px;
+    border-right: 1px solid #b3b3b3ef;
+}
+.CT .wrap .product .right div p {
+    padding-bottom: 10px;
+}
+.CT .wrap .product .right span svg {
+    color: #be4646;
+    font-weight: 900;
+    padding: 2px;
+    margin-top: 25px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.CT .wrap .head span svg:hover, .CT .wrap .product .right span svg:hover {
+    background: rgba(0, 0, 0, 0.219);
+}
+.CT .wrap .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 20px 0;
+}
+.CT .wrap .bottom div {
+    display: grid;
+    align-items: start;
+    text-align: start;
+    flex: 1;
+}
+.CT .wrap .bottom div p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.CT .wrap .bottom button {
+    flex: 1;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    background: #be4646;
+}
+.CT .wrap .bottom button span {
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight: 900;
+    background: #fff;
+    color: #be4646;
+    border-radius: 50%;
+    margin-left: 5px;
+}
