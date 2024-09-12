@@ -11,9 +11,9 @@ export default function ProductCard({data}) {
             <div className="PC_card" >
                 <Link to={`/shop-collections/${routeFormat(data.name)}/${data.id}`}>
                     <div className='PC_imgBox'>
-                        <div className="PC_img" style={{ backgroundImage: `url(${data.image})` }}></div>
+                        <div className="PC_img" style={{ backgroundImage: `url(${data?.image})` }}></div>
                     </div>
-                    <ProductDetails name={data.name} price={data.price} />
+                    <ProductDetails name={data?.name} price={data?.price} />
                 </Link>
             </div>
         </div>
