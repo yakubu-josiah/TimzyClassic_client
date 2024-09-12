@@ -1,9 +1,10 @@
 .HD {
-    background: transparent;
-    padding: 23px 0;
+    z-index: 2;
     width: 100%;
     margin: 0 auto;
-    z-index: 2;
+    padding: 23px 0;
+    position: relative;
+    background: transparent;
     backdrop-filter: blur(2px);
 }
 .HD .HD_wrapper{
@@ -92,6 +93,33 @@
 .HD .HD_mobileMenu {
     display: none;
 }
+
+
+/* THE CART DISPLAY SECTION */
+.HD .HD_cart {
+    position: absolute;
+    width: fit-content;
+    right: 20px;
+    z-index: 999;
+    background: #fff;
+    transform: translateY(-125%);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out;
+}
+.HD .HD_cart.open {
+    top: 84px;
+    opacity: 1;
+    transform: translateY(1%);
+    transition: transform 0.5s ease-in-out;
+}
+.HD .HD_wrapper .HD_items .HD_navIcons div span .cart{
+    color: green;
+    padding-bottom: 1px;
+    border-bottom: 3px solid #be4646;
+}
+
+
+
 @media screen and (max-width: 850px) and (min-width: 481px) {
 
     .HD .HD_wrapper .HD_items {
