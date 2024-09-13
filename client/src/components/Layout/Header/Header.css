@@ -102,7 +102,7 @@
     right: 20px;
     z-index: 999;
     background: #fff;
-    transform: translateY(-125%);
+    transform: translateY(-150%);
     opacity: 1;
     transition: transform 0.5s ease-in-out;
 }
@@ -121,7 +121,7 @@
 
 
 @media screen and (max-width: 850px) and (min-width: 481px) {
-
+    
     .HD .HD_wrapper .HD_items {
         padding: 0 30px;
     }
@@ -142,5 +142,7 @@
     .HD .HD_wrapper .HD_items .HD_hamburger {
         display: block;
     }
-    
+    .HD .HD_cart {
+        display: none;
+    }
 }
