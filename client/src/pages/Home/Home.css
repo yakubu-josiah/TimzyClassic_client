@@ -82,37 +82,10 @@
     margin: auto;
     height: fit-content;    
     padding-bottom: 35px;
-    /* scroll-snap-type: x mandatory; */
     scroll-behavior: smooth;
     transition: all ease 0.7;
     
 }
-::-webkit-progress-bar{
-    width: 10%;
-    height: 20px;
-}
-.HM .HM_overlay .HM_wrap .HM_slider .HM_wrap .HM_slideCont .HM_slide::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-    background: transparent;
-}
-
-
-.HM .HM_overlay .HM_wrap .HM_slider .HM_wrap .HM_slideCont .HM_slide::-webkit-scrollbar-thumb {
-    width: 2px;
-    height: 2px;
-    background: #fff;
-    scrollbar-width: 15px;
-
-}
-.HM .HM_overlay .HM_wrap .HM_slider .HM_wrap .HM_slideCont .HM_slide::-webkit-scrollbar-track {
-    width: 60%;
-    height: 2px;
-    background: #4e4c4c;
-    scrollbar-width: 15px;
-
-}
-
 
 .HM .HM_overlay .HM_wrap .HM_featured h1{
 

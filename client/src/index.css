@@ -58,7 +58,31 @@ main {
     color: #808080;
 }
 
+::-webkit-progress-bar{
+    width: 10%;
+    height: 20px;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    scrollbar-width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: #be4646;
+}
 
+/* No scroll effect on small screen modals */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* No scroll effect on small screen modals */
 @media screen and (max-width: 850px) and (min-width: 481px) {
 
 }

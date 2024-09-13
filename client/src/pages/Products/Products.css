@@ -132,9 +132,6 @@
     display: none;
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
 
 @media screen and (max-width: 750px) {
     .PDS .PDS_wrap .PDS_left {
