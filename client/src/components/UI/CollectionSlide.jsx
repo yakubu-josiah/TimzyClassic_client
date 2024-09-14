@@ -9,6 +9,7 @@ import data8 from "../../assets/images/data5.jpg"
 import "./CollectionSlide.css"
 import { routeFormat } from "../../Utils/routeFormat";
 import { Link } from "react-router-dom";
+import ProductDetails from "./ProductDetails";
 
 const data = 
 [
@@ -101,10 +102,18 @@ export default function CollectionSlide({ type }) {
                             onClick={() => handleItemClick(index)}
                         >
                             <img src={item.image} alt={item.title} />
-                            <div className={`CS_details ${activeIndex === index ? "CS_details" : ""}`}>
-                                <Link to={`/shop-collections/${routeFormat(item.title)}/${item.id}`}>
-                                    view-more
-                                </Link>
+                            <div className={`CS_details ${activeIndex === index ? "CS_active" : ""}`}>
+                                <div className="bgScreen">
+                                    <Link to={`/shop-collections/${routeFormat(item.title)}/${item.id}`}>
+                                        <ProductDetails name={item.title} price={item.price} />
+                                    </Link>
+                                </div>
+                                
+                                <div className="smScreen">
+                                    <Link to={`/shop-collections/${routeFormat(item.title)}/${item.id}`}>
+                                        view-more
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     ))}

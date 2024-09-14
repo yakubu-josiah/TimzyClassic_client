@@ -90,6 +90,7 @@
 
 .CS .CS_cont .CS_images .CS_img .CS_details {
     width: 100%;
+    height: fit-content;
     display: none;
     position: absolute;
     background: rgb(28 28 28 / 71%);
@@ -99,33 +100,38 @@
     left: 0;
     bottom: 0;
     opacity: 0;
-    padding: 20px 0 30px ;
+    padding: 20px 20px 7px;
     color: #878886;
     border-top: 4px solid #fff;
-    animation: showLink 1s ease-in-out 0.1s 1 forwards;
+    animation: showContent 1s ease-in-out 0.1s 1 forwards;
 }
 
-
-.CS .CS_cont .CS_images .CS_img .CS_details a{
+.CS .CS_cont .CS_images .CS_img .CS_details .bgScreen h3, .CS .CS_cont .CS_images .CS_img .CS_details .bgScreen h6 {
     opacity: 0;
-    color: #fff;
-    padding-bottom: 10px;
     transition: 0.7s ease;
-    text-decoration: underline;
-    font-style: italic;
-    padding-bottom: 4px;
-    animation: showLink 1s ease-in-out 0.3s 1 forwards;
+    animation: showContent 1s ease-in-out 0.3s 1 forwards;
 }
+
+
+.CS .CS_cont .CS_images .CS_img .CS_details .bgScreen p {
+    transition: 0.7s ease;
+    opacity: 0;
+    animation: showContent 1s ease-in-out 0.5s 1 forwards;
+}
+.CS .CS_cont .CS_images .CS_img .CS_details .smScreen a{
+    display: none;
+}
+
 
 .CS_active {
     cursor: default !important;
-    width: 70% !important;
+    width: 100% !important;
 }
 .CS_active .CS_details {
     display: block !important;
 }
 
-@keyframes showLink {
+@keyframes showContent {
     from{
         opacity: 0;
         transform: translate(0,100px);
@@ -161,11 +167,11 @@
         padding: 2px;
     }
     .CS .CS_cont .CS_images .CS_img .CS_details {
-        padding: 8px;
+        padding: 5px 0;
         border: 0;
         border-top: 4px solid #fff;
     }
-    .CS .CS_cont .CS_images .CS_img .CS_details a {
+    .CS .CS_cont .CS_images .CS_img .CS_details .bgScreen a {
         font-size: smaller;
     }
     .CS .CS_cont .CS_images{
@@ -177,10 +183,25 @@
         font-weight: 500;
     }
     .CS .CS_intro h1 {
-        font-size: 18px;
+        font-size: 15px;
     }
     .CS .CS_intro div p {
         font-size: 12px;
+        text-align: justify;
     }
-    
+    .CS .CS_cont .CS_images .CS_img .CS_details .bgScreen {
+        display: none;
+    }
+    .CS .CS_cont .CS_images .CS_img .CS_details .smScreen a{
+        display: block;
+        opacity: 1 !important;
+        height: 100% !important;
+        color: #fff;
+        padding-bottom: 10px;
+        transition: 0.7s ease;
+        text-decoration: underline;
+        font-style: italic;
+        padding-bottom: 4px;
+        animation: showContent 1s ease-in-out 0.3s 1 forwards;
+    }
 }
