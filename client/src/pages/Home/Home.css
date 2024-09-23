@@ -71,8 +71,6 @@
     position: relative;
 }
 
-
-
 .HM .HM_overlay .HM_wrap .HM_slider .HM_wrap .HM_slideCont .HM_slide {
     overflow-x: auto;
     scrollbar-gutter: stable;
@@ -128,6 +126,8 @@
     .HM .HM_overlay .HM_wrap .HM_intro div p {
         font-weight: 400;
         font-size: 12px;
+        padding: 0 10px;
+        text-align: justify;
     }
     .HM .HM_overlay .HM_wrap .HM_featured .HM_wrap {
         grid-template-columns: repeat(2, 1fr);
