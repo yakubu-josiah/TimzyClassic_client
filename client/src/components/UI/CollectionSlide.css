@@ -187,7 +187,8 @@
     }
     .CS .CS_intro div p {
         font-size: 12px;
-        text-align: justify;
+        text-wrap: pretty;
+        text-align: center;
     }
     .CS .CS_cont .CS_images .CS_img .CS_details .bgScreen {
         display: none;
