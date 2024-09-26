@@ -27,7 +27,7 @@ export default function Cart({ OpenCart }) {
       image: data2
     },
     {
-      id: "ddf1dtr33412QQ7e547a0e74cb9",
+      id: "c2ddf1dtr33412QQ7e547a0e74cb9",
       name: "Mitchell Fitzgerald",
       price: 45000,
       col: "5 Shades Breezy",
@@ -35,7 +35,7 @@ export default function Cart({ OpenCart }) {
       image: data1
     },
     {
-      id: "e2ssc3b5c4e6rt4ba2ebf06569",
+      id: "e2sas0c3b5c4e6rt4ba2ebf06569",
       name: "Howell Faulkner",
       price: 40000,
       col: "Lifestyle Collection",
@@ -43,7 +43,7 @@ export default function Cart({ OpenCart }) {
       image: data2
     },
     {
-      id: "ddf1dtr33412QQ7e547a0e74cb9",
+      id: "d0df1dtr33412QQ7e547a0e74cb9",
       name: "Mitchell Fitzgerald",
       price: 45000,
       col: "5 Shades Breezy",
@@ -51,7 +51,7 @@ export default function Cart({ OpenCart }) {
       image: data1
     },
     {
-      id: "e2ssc3b5c4e6rt4ba2ebf06569",
+      id: "ev2ssc3b5c4e6rt4ba2ebf06569",
       name: "Howell Faulkner",
       price: 40000,
       col: "Lifestyle Collection",
@@ -59,7 +59,7 @@ export default function Cart({ OpenCart }) {
       image: data2
     },
     {
-      id: "ddf1dtr33412QQ7e547a0e74cb9",
+      id: "d6df1dtr33412QQ7e547a0e74cb9",
       name: "Mitchell Fitzgerald",
       price: 145000,
       col: "5 Shades Breezy",
@@ -67,7 +67,7 @@ export default function Cart({ OpenCart }) {
       image: data1
     },
     {
-      id: "e2ssc3b5c4e6rt4ba2ebf06569",
+      id: "e25ssc3b5c4e6rt4ba2ebf06569",
       name: "Howell Faulkner",
       price: 102000,
       col: "Lifestyle Collection",
