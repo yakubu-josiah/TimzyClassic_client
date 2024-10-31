@@ -1,5 +1,6 @@
 .SH {
     width: 100%;
+    position: relative;
     height: fit-content;
 }
 .SH .SH_gallery {
@@ -46,21 +47,31 @@
     margin-bottom: 10px;
 }
 .SH .SH_header .SH_wrap .SH_icons {
-    display: flex;
-    justify-content: center;
     gap: 15px;
-    margin: 10px auto;
     width: 90%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    color: #000;
 } 
-.SH .SH_header .SH_icons button {
+.SH .SH_header .SH_wrap .SH_icons svg {
+    color: #4e4c4c;
+}
+.SH .SH_header .SH_icons .filterBTN, .SH .SH_header .SH_icons .sortBTN {
+    gap: 10px;
     width: 100%;
     display: flex;
-    gap: 10px;
-    font-size: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 6px 4px;
+    position: relative;
     letter-spacing: 2px;
-    justify-content: center;
     align-items: center;
-    padding: 5px 0;
+    background: #ededed;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #919191;
 }
 .SH .SH_gallery .SH_collection:nth-child(3n+2) {
     position: relative;
@@ -80,7 +91,6 @@
 }
 .SH .SH_gallery .SH_collection .SHC_card .SHC_img .SHC_title {
     position: absolute;
-    z-index: 10;
     width: 80%;
     top: 80%;
     left: 0;
@@ -103,6 +113,144 @@
     transition: 0.4s ease-in-out;
 }
 
+.SH .SH_header .SH_icons .sortBTN .select {
+    background: #0000;
+    border: none;
+    color: #0000;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    pointer-events: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+.SH .SH_header .SH_icons .sortBTN .select option {
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    background-color: #0000005d;
+    color: #fff;
+}
+
+.SH .FLT_menuTab {
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 95%;
+    top: -100%;
+    z-index: 1000;
+    display: block;
+    color: #fff;
+    text-align: start;
+    overflow: scroll;
+    position: absolute;
+    margin: 100px auto;
+    transition: top .5s ease-in-out;
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    background-color: #000000e6;
+}
+
+.SH .FLT_menuTab .FLT_wrap {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.SH .FLT_menuTab .FLT_wrap .FLT_head {
+    align-items: center;
+    border-bottom: 1px solid #595959;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    padding: 20px 25px;
+    position: relative;
+    width: 100%;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_head h3 span {
+    left: 25px;
+    top: 11px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    position: absolute;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter {
+    font-weight: 300;
+    padding: 25px 30px 60px;
+    width: 100%;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont {
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont h3 {
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    word-spacing: 4px;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_item {
+    gap: 7px;
+    display: flex;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_price input {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_price .label {
+    gap: 5px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_filter .FLT_cont .FLT_price .label span {
+    border: 1px solid #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_close {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    padding: 20px 25px;
+    justify-content: center;
+    border-top: 1px solid #595959;
+}
+.SH .FLT_menuTab .FLT_wrap .FLT_close button:hover {
+    cursor: pointer;
+    background: #635e5ee6;
+}
+
+.SH .FLT_menuTab .FLT_wrap .FLT_close button {
+    background-color: #313131e6;
+    border: 0;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.SH .FLT_menuTab.open {
+    top: 0;
+    height: fit-content;
+} 
+
 @media screen and (max-width: 650px) {
     .SH .SH_gallery {
         padding: 40px 3%;
@@ -118,4 +266,5 @@
     .SH .SH_gallery .SH_collection:nth-child(3n+2) {
         top: 0;
     }
+
 }
