@@ -6,7 +6,6 @@
 .RR .cont {
     padding: 10px 0;
     margin-bottom: 20px;
-    background:#97979721;
 }
 .RR .cont .wrap {
     width: 100%;
@@ -48,10 +47,18 @@
     color: #be4646;
     font-weight: 600;
 }
-
+.RR .sf {
+    margin: auto;
+    width: 85%;
+    padding-top: 20px;
+    border-top: 2px dashed #abababa1;
+}
 
 @media screen and (max-width: 850px) {
     .RR .cont .wrap {
         flex-direction: column;
+    }
+    .RR .sf {
+        width: 90%;
     }
 }
