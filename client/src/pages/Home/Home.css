@@ -51,6 +51,7 @@
     letter-spacing: 0;
     white-space: wrap;
     text-wrap: balance;
+    padding: 0 15px;
 }
 
 .HM .HM_overlay .HM_wrap .HM_slider{
@@ -126,8 +127,8 @@
     .HM .HM_overlay .HM_wrap .HM_intro div p {
         font-weight: 400;
         font-size: 12px;
-        padding: 0 10px;
-        text-align: justify;
+        text-align: center;
+        text-wrap: pretty;
     }
     .HM .HM_overlay .HM_wrap .HM_featured .HM_wrap {
         grid-template-columns: repeat(2, 1fr);

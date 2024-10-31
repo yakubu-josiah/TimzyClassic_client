@@ -5,6 +5,7 @@ import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import NotFound from "./pages/NotFound";
 import Shop from "./pages/Shop/Shop";
+import RefundReturn from "./pages/RefundReturn/RefundReturn";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
               <Route path="/shop-collections" element={<Shop />} />
               <Route path="/shop-collections/:collectionName" element={<Products />} />
               <Route path="/shop-collections/:collectionName/:collectionId" element={<Product />} />
-
+              <Route path="/return-refund-policy" element={<RefundReturn />} />
               
               <Route path="*" element={<NotFound />}></Route>
 

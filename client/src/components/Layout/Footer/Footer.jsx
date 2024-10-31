@@ -48,7 +48,7 @@ export default function Footer() {
                 <Link to="/contact-us">Contact</Link>
                 <Link to="/frequently-asked-questions">FAQ</Link>
                 <Link to="/shipping">Shipping</Link>
-                <Link to="/returns">Returns</Link>
+                <Link to="/return-refund-policy">Returns & Refund</Link>
                 <Link to="/terms-of-use">Terms of Use</Link>
                 <Link to="/privacy-policy">Privacy Policy</Link>
               </div>
