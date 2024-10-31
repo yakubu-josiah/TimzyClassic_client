@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import heroBg from "../../assets/images/heroBanner.jpg"
 import cardBg from "../../assets/images/sliderCard.webp"
@@ -13,30 +13,12 @@ import './Products.css';
 import ProductCard from '../../components/UI/ProductCard';
 
 export default function Products() {
-  const [maxPrice, setMaxPrice] = useState( 0);
   const { collectionName } = useParams();
-  const [filterMenu, setFilterMenu] = useState(false);
-
-
-  const toggleMenu = () => {
-    setFilterMenu(!filterMenu);
-  };
-
-
-
-  useEffect(() => {
-    document.body.classList.toggle('no-scroll', filterMenu);
-
-    return () => {
-      document.body.classList.remove('no-scroll')
-    };
-
-  }, [filterMenu])
 
   const data =
   [
     {
-      id: "ddf1dtr33412QQ7e547a0e74cb9",
+      id: "ddf1dtr3i3412QQ7e547a0e74cb9",
       name: "Mitchell Fitzgerald",
       price: 45000,
       address: "48 Flatlands Avenue, Cutter, North Dakota",
@@ -44,7 +26,7 @@ export default function Products() {
       image: data1
     },
     {
-      id: "e2ssc3b5c4e6rt4ba2ebf06569",
+      id: "e2ssc3b5c4e6vrt4ba2ebf06569",
       name: "Howell Faulkner",
       price: 40000,
       address: "77 Hemlock Street, Hasty, Florida",
@@ -52,7 +34,7 @@ export default function Products() {
       image: data2
     },
     {
-      id: "2e4453dse34c435fds0bas2bf069",
+      id: "2e4453dse34cc435fds0bas2bf069",
       name: "Eris Dortmund",
       price: 70000,
       address: "77 Hemlock Street, Hasty, Florida",
@@ -60,7 +42,7 @@ export default function Products() {
       image: data3
     },
     {
-      id: "34yu6b5cwe21xdx1c3fds4d52s2bf069",
+      id: "34yu6b5cw2e21xdx1c3fds4d52s2bf069",
       name: "Madison Powell",
       price: 2300,
       address: "77 Hemlock Street, Hasty, Florida",
@@ -68,7 +50,7 @@ export default function Products() {
       image: data4
     },
     {
-      id: "7623v41a2c435fd0bas2bf069",
+      id: "7623v41a2c4vv35fd0bas2bf069",
       name: "Keith Cannie",
       price: 50340,
       address: "77 Hemlock Street, Hasty, Florida",
@@ -76,7 +58,7 @@ export default function Products() {
       image: data5
     },
     {
-      id: "2345c435fcx33d23rf2b345f069",
+      id: "23e45c435fcx33d23rf2b345f069",
       name: "Dennis Rey",
       price: 10043,
       address: "77 Hemlock Street, Hasty, Florida",
@@ -84,7 +66,7 @@ export default function Products() {
       image: data6
     },
     {
-      id: "6er335c435fd23rf4t542bf069",
+      id: "6er335c435fd23rf4t542bbb069",
       name: "Polish Welder",
       price: 90434,
       address: "77 Hemlock Street, Hasty, Florida",
@@ -108,116 +90,12 @@ export default function Products() {
           {collectionName.toUpperCase().replace(/-/g, ' ')}
         </h1>
       </div>
-      
-      <div className="PDS_filterX">
-        <div>
-          <div className="filterBTN" onClick={toggleMenu}>
-            <h4>FILTER <span></span></h4>
-          </div>
-
-          <div className="sortBTN">
-            SORT
-            <select className="select" name="" id="sort_items">
-              <option value="asc"> Price (Highest Price) </option>
-              <option value="desc"> Price (Lowest Price) </option>
-            </select>
-          </div>       
-        </div>
+      <div className="intro">
+        <p>All designed and made right here in Timzy Classic Fashion Home. Get the streets on hold.</p>
       </div>
-
-      <div className={`FLT_menuTab ${filterMenu ? 'open' : ''}`}>
-        <div className="FLT_wrap">
-
-          <div className="FLT_head">
-            <h3><span onClick={toggleMenu}>x</span> FILTER BY</h3>
-          </div>
-          
-          <div className="FLT_filter">
-            <div className="FLT_cont">
-              <h3>CATEGORIES</h3>
-              <div className="FLT_item">
-                <input type="checkbox" id="1" value={1} />
-                <label htmlFor="1"> Suits</label>
-              </div>
-              <div className="FLT_item">
-                <input type="checkbox" id="2" value={2} />
-                <label htmlFor="2"> Native Attires</label>
-              </div>
-              <div className="FLT_item">
-                <input type="checkbox" id="3" value={3} />
-                <label htmlFor="3"> Caps</label>
-              </div>
-              <div className="FLT_item">
-                <input type="checkbox" id="4" value={4} />
-                <label htmlFor="4"> Beach Wears</label>
-              </div>
-            </div>
-
-            <div className="FLT_cont">
-              <h3>FILTER BY PRICE</h3>
-              <div className="FLT_price">
-                <input type="range" min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
-                <div className="label">
-                  <span>{maxPrice}</span> -
-                  <span>1000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="FLT_close">
-            <button onClick={toggleMenu}>CLOSE</button>
-          </div>
-        </div>
-      </div>
-      
 
       <div className="PDS_wrap">
-        <div className="PDS_left">
-          <div className="PDS_filter">
-            <h2>Categories</h2>
-            <div className="PDS_item">
-              <input type="checkbox" id="1" value={1} />
-              <label htmlFor="1"> Suits</label>
-            </div>
-            <div className="PDS_item">
-              <input type="checkbox" id="2" value={2} />
-              <label htmlFor="2"> Native Attires</label>
-            </div>
-            <div className="PDS_item">
-              <input type="checkbox" id="3" value={3} />
-              <label htmlFor="3"> Caps</label>
-            </div>
-            <div className="PDS_item">
-              <input type="checkbox" id="4" value={4} />
-              <label htmlFor="4"> Beach Wears</label>
-            </div>
-          </div>
-
-          <div className="PDS_filter">
-            <h2>Filter by Price</h2>
-            <div className="PDS_price">
-              <input type="range" min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
-              <div className="label">
-                <span>{maxPrice}</span> -
-                <span>1000</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="PDS_filter">
-            <h2>Sort by</h2>
-            <div className="PDS_sort">
-              <input type="radio" value="asc" name="price" />
-              <label htmlFor="asc"> Price (Lowest Price)</label>
-            </div>
-            <div className="PDS_sort">
-              <input type="radio" value="desc" name="price" />
-              <label htmlFor="desc"> Price (Highest Price)</label>
-            </div>
-          </div>
-        </div>
-
-        <div className="PDS_right" style={cardBackground}>
+        <div className="PDS_main" style={cardBackground}>
           <div className="PDS_cards">
             <div className="PDS_cont">
               {data.map((item) => (
