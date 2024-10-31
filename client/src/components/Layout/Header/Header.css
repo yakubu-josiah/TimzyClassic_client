@@ -55,14 +55,15 @@
 }
 .HD_active {
     padding: 0 5px;
-    color: black !important;
+    color: #be4646 !important;
     border-width: 40px;
     font-weight: 600;
-    border-bottom: black solid 2px;
+    border-bottom: #be4646 solid 2px;
 }
 .HD .HD_wrapper .HD_items .HD_menu ul li a:hover {
     color: inherit;
-    border-bottom: 2px solid black;
+    color: #be4646;
+    border-bottom: 2px solid #be4646;
     transition: all ease-in-out;
     transition-duration: 0.2s;
 }
