@@ -83,7 +83,7 @@ export default function Product() {
 
               </div>
               <div className="cart">
-                <button><span><AddShoppingCartSharpIcon /></span> ADD TO CART</button>
+                <button><span><AddShoppingCartSharpIcon /></span> <span>ADD TO SHOP BAG</span></button>
                 <button><FavoriteBorderSharpIcon /></button>
               </div>
               <ol><li>49% Off Sales. Discount applied in cart.</li></ol>

@@ -154,7 +154,10 @@
     max-width: 300px;
 }
 .PDT .PDT_wrap .right .content .btn .cart button:nth-child(1) {
-    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
     outline: none;
     padding: 10px;
     border: none;
@@ -165,9 +168,7 @@
     background: #a54949;
 }
 .PDT .PDT_wrap .right .content .btn .cart button span {
-    position: absolute;
-    top: 7px;
-    left: 20%;
+    white-space: nowrap;
 }
 .PDT .PDT_wrap .right .content .btn .cart button span svg, 
 .PDT .PDT_wrap .right .content .btn .cart button svg
@@ -224,9 +225,6 @@
     .PDT .PDT_wrap .right {
         width: 100%;
         padding-left: 15px;
-    }
-    .PDT .PDT_wrap .right .content .btn .cart button span {
-        left: 15%;
     }
 
 }
