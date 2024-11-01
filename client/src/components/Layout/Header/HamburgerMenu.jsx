@@ -1,10 +1,10 @@
 import React, { useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
-import StoreOutlinedIcon from '@mui/icons-material/StoreOutlined';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import NewspaperOutlinedIcon from '@mui/icons-material/NewspaperOutlined';
-import ContactSupportOutlinedIcon from '@mui/icons-material/ContactSupportOutlined';
+import DryCleaningOutlinedIcon from '@mui/icons-material/DryCleaningOutlined';
+import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
+import MarkUnreadChatAltOutlinedIcon from '@mui/icons-material/MarkUnreadChatAltOutlined';
+import PermPhoneMsgOutlinedIcon from '@mui/icons-material/PermPhoneMsgOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import './HamburgerMenu.css';
@@ -39,7 +39,7 @@ export default function HamburgerMenu() {
                             <li>
                                 <Link onClick={toggleMenu} to="/shop-collections">
                                     <div className={`HB_active ${checkRoute("/shop-collections") && "HB_links"}`}>
-                                        <StoreOutlinedIcon />
+                                        <DryCleaningOutlinedIcon />
                                         Shop
                                     </div>
                                 </Link>
@@ -47,7 +47,7 @@ export default function HamburgerMenu() {
                             <li>
                                 <Link onClick={toggleMenu} to="/blogs">
                                     <div className={`HB_active ${checkRoute("/blogs") && "HB_links"}`} >
-                                        <NewspaperOutlinedIcon />
+                                        <MarkUnreadChatAltOutlinedIcon />
                                         Blogs
                                     </div>
                                 </Link>
@@ -55,7 +55,7 @@ export default function HamburgerMenu() {
                             <li>
                                 <Link onClick={toggleMenu} to="/about-us">
                                     <div className={`HB_active ${checkRoute("/about-us") && "HB_links"}`}>
-                                        <InfoOutlinedIcon />
+                                        <Groups2OutlinedIcon />
                                         About
                                     </div>
                                 </Link>
@@ -63,7 +63,7 @@ export default function HamburgerMenu() {
                             <li>
                                 <Link onClick={toggleMenu} to="/contact-us">
                                     <div className={`HB_active ${checkRoute("/contact-us") && "HB_links"}`}>
-                                        <ContactSupportOutlinedIcon />
+                                        <PermPhoneMsgOutlinedIcon />
                                         Contact
                                     </div>
                                 </Link>
