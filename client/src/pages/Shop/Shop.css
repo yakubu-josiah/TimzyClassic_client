@@ -139,14 +139,13 @@
     height: 0;
     width: 95%;
     top: -100%;
-    z-index: 1000;
+    z-index: 900;
     display: block;
     color: #fff;
     text-align: start;
     overflow: scroll;
     position: absolute;
     margin: 100px auto;
-    transition: top .5s ease-in-out;
     backdrop-filter: blur(1.9px);
     -webkit-backdrop-filter: blur(1.9px);
     background-color: #000000e6;
@@ -249,6 +248,7 @@
 .SH .FLT_menuTab.open {
     top: 0;
     height: fit-content;
+    transition: top .8s ease;
 } 
 
 @media screen and (max-width: 650px) {
