@@ -34,7 +34,7 @@ export default function HamburgerMenu() {
                     <p>{menuOpen ? ' ' : 'Menu'}</p>
                 </div>
                 <div className="HB_menu">
-                    <div>
+                    <div className="HB_wrap">
                         <ul>
                             <li>
                                 <Link onClick={toggleMenu} to="/shop-collections">

@@ -48,22 +48,24 @@
         padding: 20px;        
     }
     
-    .HB_menu div {
+    .HB_menu .HB_wrap {
         width: 100%;
         display: flex;
         padding: 4px 0;
-        background: linear-gradient(to right, #d3fcff, #fbf0df, #f6f6f7, #c7d3ca, #d9e8f9);
-
+        border-top: 2px dotted #be4646;
+        border-right: 2px dotted #be4646;
+        border-left: 2px dotted #be4646;
+        background: linear-gradient(to right, #d9e8f9, #c7d3ca, #f6f6f7, #fbf0df, #d3fcff)
     }
 
-    .HB .HB_menu div ul {
+    .HB .HB_menu .HB_wrap ul {
         width: 100%;
         padding: 0;
         text-align: center;
         color: #4e4c4c;
     }
     
-    .HB_menu div ul li{
+    .HB_menu .HB_wrap ul li{
         list-style: none;
         text-align: center;
     }
@@ -114,7 +116,7 @@
         height: 50px;
         width: fit-content;
         z-index: 150;
-        background: linear-gradient(to right, #d3fcff, #fbf0df, #f6f6f7, #c7d3ca, #d9e8f9);
+        background: linear-gradient(to right, #fbf0df, #f6f6f7, #c7d3ca,  #d3fcff,#d9e8f9);
     }
 
     .HB .cart_Btn svg {
