@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="top">
           <div>
             <h2>Join Us</h2>
-            <p>We will let you know when we have new arrivals, events and promo's don't worry we send them infrequently, just a friendly hi now and again!</p>
+            <p>We will let you know when we have new arrivals, events and promo's don't worry we send them in frequently, just a friendly hi now and again!</p>
             <div className="form">
               <form>
                 <input type="email" placeholder="Enter your email" />

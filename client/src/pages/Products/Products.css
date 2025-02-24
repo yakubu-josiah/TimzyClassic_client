@@ -28,17 +28,17 @@
 }
 
 .PDS .intro {
-    z-index: 2;
-    font-size: 12px;
-    font-weight: 300;
-    max-width: 400px;
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 450px;
     color: #22aa00;
-    margin: 48px auto;
+    margin: 80px auto 50px;
     position: relative;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     white-space: wrap;
     text-wrap: pretty;
     padding: 0 15px;
+    text-transform: uppercase;
 }
 
 .PDS .PDS_wrap {
