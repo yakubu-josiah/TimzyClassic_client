@@ -86,6 +86,10 @@
     color: inherit;
 }
 
+.HD .HD_wrapper .HD_items .HD_navIcons div span {
+    cursor: pointer;
+}
+
     
 /* THE HAMBURGER MENU SECTION */
 .HD .HD_wrapper .HD_items .HD_hamburger {
